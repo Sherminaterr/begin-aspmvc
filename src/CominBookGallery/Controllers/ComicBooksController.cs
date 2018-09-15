@@ -10,17 +10,18 @@ namespace CominBookGallery.Controllers
     {
         public ActionResult Detail()
         {
-            if(DateTime.Today.DayOfWeek == DayOfWeek.Saturday)
-            {
-                //return new RedirectResult("/");
-                Redirect("/");
-            }
-
-            //return new ContentResult()
+            return View();
+            //if(DateTime.Today.DayOfWeek == DayOfWeek.Saturday)
             //{
-            //    Content= "Hello from comic book controller"
-            //};
-            return Content("Hello from comic book controller");
+            //    //return new RedirectResult("/");
+            //    Redirect("/");
+            //}
+
+            ////return new ContentResult()
+            ////{
+            ////    Content= "Hello from comic book controller"
+            ////};
+            //return Content("Hello from comic book controller");
             
         }
     }
